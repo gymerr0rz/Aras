@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-colors-1: #e4e4e4;
+  --primary-colors-2: #bababa;
+  --primary-colors-text1: #191919;
+  --primary-colors-text2: #1a1a1a;
+
+  --secondary-colors-1: #fff9ad;
+  --secondary-colors-2: #fef35b;
+
+  --basic-colors-1: #ffffff;
+  --basic-colors-2: #ffa800;
+  --basic-colors-3: #ff3030;
+  --basic-colors-4: #105bfb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit';
+}

@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  padding: 48px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 3px solid #000;
+  color: var(--primary-colors-text1);
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+.navbarButtons {
+  display: flex;
+  gap: 10px;
+
+  button {
+    padding: 8px 16px;
+    border-radius: 24px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    &.active {
+      background-color: var(--primary-colors-text1);
+      color: #fff;
+    }
+  }
+
+  select {
+    padding: 8px 16px;
+    border-radius: 24px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--primary-colors-text1);
+  }
+}
+
+.showcaseLinks {
+  color: var(--primary-colors-text2);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+  :first-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  a {
+    padding: 0 30px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+  .menu {
+    display: contents !important;
+  }
+
+  .navbarButtons {
+    display: none;
+  }
+}

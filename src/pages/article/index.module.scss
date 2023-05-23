@@ -1,0 +1,13 @@
+.container {
+  padding: 0 164px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+  .container {
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+}

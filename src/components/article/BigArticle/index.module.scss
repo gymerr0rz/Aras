@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary-colors-text);
+  }
+}
+
+.articleButtons {
+  display: flex;
+  gap: 10px;
+  button {
+    padding: 8px 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid;
+    background-color: transparent;
+  }
+}
+
+.article {
+  max-height: 400px;
+  min-height: 400px;
+  object-fit: cover;
+  background-color: #8f8585;
+}
+
+.articleInfo {
+  margin: 0 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.articleDate {
+  color: var(--primary-colors-2);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    a {
+      order: -2;
+    }
+  }
+}

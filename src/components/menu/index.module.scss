@@ -1,0 +1,68 @@
+.navbarButtons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  button {
+    padding: 8px 16px;
+    border-radius: 24px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    &.active {
+      background-color: var(--primary-colors-text1);
+      color: #fff;
+    }
+  }
+
+  select {
+    padding: 8px 16px;
+    border-radius: 24px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--primary-colors-text1);
+  }
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 99;
+  padding: 20px;
+  gap: 20px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-colors-text1);
+}

@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0;
+  margin: 0 10px;
+  h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.articleButtons {
+  display: flex;
+  button {
+    padding: 8px 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+
+.article {
+  object-fit: cover;
+  min-height: 222px;
+  max-height: 222px;
+  width: 100%;
+  background-color: #8f8585;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articleInfo {
+  margin: 0 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.articleDate {
+  color: var(--primary-colors-2);
+}
