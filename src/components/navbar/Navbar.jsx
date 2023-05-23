@@ -50,6 +50,7 @@ const Navbar = ({ sortBy, sort, refresh }) => {
               <option value="publishedAt" defaultValue>
                 Najnoviji
               </option>
+              <option value="oldest">Najstariji</option>
               <option value="popularity">Popularni</option>
             </select>
           ) : null}

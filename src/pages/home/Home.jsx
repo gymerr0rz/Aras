@@ -19,7 +19,7 @@ const Home = () => {
         `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&sortBy=${value}&apiKey=${API_KEY}`
       )
       .then((res) => {
-        setArticle(res.data.articles);
+        setArticle(res.data.articles.sort().reverse());
         setSort(value);
       })
       .catch((err) => console.log(err.response.data.message));

@@ -15,6 +15,7 @@ const Article = () => {
     ? decodeTitle.split('&sorted=')[1]
     : '';
   let titleifSorted;
+  console.log(sorted);
   if (sorted !== '') titleifSorted = decodeTitle.split('&sorted=')[0];
 
   const nextArticle = () => {
